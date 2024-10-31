@@ -24,18 +24,18 @@ public class MoodController {
         return ResponseEntity.ok(newEntry);
     }
 
-    @GetMapping("/history")
-    public ResponseEntity<List<MoodEntryDto>> getMoodHistory() {
-        @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate;
-        @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate;
-        List<MoodEntry> entries = moodEntryService.getEntriesByDateRange(startDate, endDate);
-        return ResponseEntity.ok(entries);
-    }
-
-    @GetMapping("/stats")
-    public ResponseEntity<List<MoodEntryDto>> getMoodStatistics() {
-        return ResponseEntity.ok(moodEntryService.getMoodStatisticsAsList());
-    }
+//    @GetMapping("/history")
+//    public ResponseEntity<List<MoodEntryDto>> getMoodHistory() {
+//        @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate;
+//        @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate;
+//        List<MoodEntry> entries = moodEntryService.getEntriesByDateRange(startDate, endDate);
+//        return ResponseEntity.ok(entries);
+//    }
+//
+//    @GetMapping("/stats")
+//    public ResponseEntity<List<MoodEntryDto>> getMoodStatistics() {
+//        return ResponseEntity.ok(moodEntryService.getMoodStatisticsAsList());
+//    }
 }
 
 
