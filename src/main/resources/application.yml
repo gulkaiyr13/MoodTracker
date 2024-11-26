@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Mood-Tracker
+  datasource:
+    url: jdbc:postgresql://localhost:5433/mood_tracker
+    username: postgres
+    password: gulkaiyr13
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: ${JWT_SECRET_KEY:your-very-secure-and-random-secret-key-1234567890!@#$%^&*()}
+  expiration: ${JWT_EXPIRATION_MILLIS:3600000}
+  refreshExpiration: ${JWT_REFRESH_EXPIRATION_MILLIS:3600000}
+
+server:
+  port: 8082
+  address: 0.0.0.0
