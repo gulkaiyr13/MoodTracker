@@ -2,6 +2,8 @@
 
 [Presentation](https://www.canva.com/design/DAGVLFognrI/-8JMjiodHWoGJJOjStStzQ/edit)
 
+[Technical Specification (TS)](https://docs.google.com/document/d/1_bSWd610kRQ471NKu85tvNLb41VZo6VdDflwc4zKy7E/edit?usp=sharing)
+
 ## Overview
 
 A simple mood-tracking application that allows users to log their daily emotional state and gain insights into their mood patterns over time.
